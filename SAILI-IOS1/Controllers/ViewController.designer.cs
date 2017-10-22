@@ -29,17 +29,9 @@ namespace SAILIIOS1
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField UsernameText { get; set; }
 
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton ViewDatabaseButton { get; set; }
-
         [Action ("LoginButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void LoginButton_TouchUpInside (UIKit.UIButton sender);
-
-        [Action ("ViewDatabaseButton_TouchUpInside:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void ViewDatabaseButton_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
@@ -61,11 +53,6 @@ namespace SAILIIOS1
             if (UsernameText != null) {
                 UsernameText.Dispose ();
                 UsernameText = null;
-            }
-
-            if (ViewDatabaseButton != null) {
-                ViewDatabaseButton.Dispose ();
-                ViewDatabaseButton = null;
             }
         }
     }

@@ -60,16 +60,6 @@
                                     <segue id="12133" destination="12045" kind="show"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="513" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="90" y="487" width="196" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ViewDatabase">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ViewDatabaseButton_TouchUpInside:" destination="BYZ-38-t0r" id="950" eventType="touchUpInside"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
@@ -78,7 +68,6 @@
                                 <exclude reference="510"/>
                                 <exclude reference="511"/>
                                 <exclude reference="512"/>
-                                <exclude reference="513"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -88,7 +77,6 @@
                                 <include reference="510"/>
                                 <include reference="511"/>
                                 <include reference="512"/>
-                                <include reference="513"/>
                             </mask>
                         </variation>
                     </view>
@@ -98,7 +86,6 @@
                         <outlet property="SignUpButton" destination="511" id="name-outlet-511"/>
                         <outlet property="UsernameText" destination="508" id="name-outlet-508"/>
                         <outlet property="PasswordText" destination="509" id="name-outlet-509"/>
-                        <outlet property="ViewDatabaseButton" destination="513" id="name-outlet-513"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -128,7 +115,7 @@
                         <viewControllerLayoutGuide type="bottom" id="516"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="519">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
@@ -331,13 +318,13 @@
                                 <rect key="frame" x="52" y="217" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="12148" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="ConfirmPassword">
                                 <rect key="frame" x="52" y="370" width="290" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="12149" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="NewPassword">
                                 <rect key="frame" x="55" y="173" width="285" height="36"/>
